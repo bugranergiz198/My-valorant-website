@@ -1,0 +1,127 @@
+@media screen and (max-width:1100px){
+    .wrapper .navbar{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .navbar .contento .links{
+        margin-left: 30px;
+    }
+    .contento .links li a{
+        padding: 8px 13px;
+    }
+    
+
+
+
+    
+    .slg{
+        font-size: 1rem;
+    }
+    .line{
+        width: 30px;
+        height: 2px;
+        background-color: #D43937;
+    }
+    
+
+
+    .playbutton:hover{
+        box-shadow: inset 30vw 0 0 0  #0F1923 ;
+    }
+    
+    #page2{        
+        min-height: 140vh;
+        
+        overflow: hidden;
+    }
+    
+    .wearevalo{
+        margin-top: 15%;
+        margin-left: 0;
+        font-size: 4rem;
+        width: auto;
+    }
+    .newnews{
+        font-size: 3em;
+        top: 2%;
+        justify-self: center;
+    }
+    .gotonews{
+        display: none;
+    }
+    .newsandphotos{
+        flex-wrap: wrap;
+        top: 12%;
+    }
+    .block{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .trailer{
+        display: flex;
+        flex-direction: column;
+    }
+    .writes{
+        width: 80%;
+        height: 40vh;
+        margin: 0 0 10px 0;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px){
+    .navbar .contento .links{
+        display: block;
+        position: fixed;
+        background: #0F1923;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        right: -100%;
+        margin-right: 0;
+        max-width: 350px;
+        text-align: center;
+        transition: all 0.3s ease;
+        overflow-y: auto;
+    }
+    
+    .contento .links li a, .contento .links li label{
+        line-height: 30px;
+        font-size: 15px;
+        display: block;
+        /* padding: 8px 13px; */
+        margin-bottom: 2px;
+    }
+    .contento #hbutton{
+        display: block;
+    }
+    .block{
+        width: 80%;
+        margin: 0;
+    }
+    /*DROPDOWN MENU STARTING*/
+    .contento .links ul{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        display: none;
+    }
+    .contento .links li{
+        margin: 15px 20px;
+    }
+    .contento .links ul li{
+        margin: 7px 20px;
+        background: #111;
+    }
+    .content .links li a{
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+    }
+    
+}

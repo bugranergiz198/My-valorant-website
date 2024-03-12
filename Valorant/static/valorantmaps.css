@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 100;
+}
+#infosaboutmaps{
+    min-height: 200vh;
+    background: #110331;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+.parallax{
+    min-height: 100vh;
+    width: 75vw;
+    margin: 0 auto;
+    padding-top: 6%;
+    padding-bottom: 15%;
+    
+}
+.containerboxes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.header{
+    width: auto;
+    height: auto;
+    font-size: 5em;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: rgb(235, 225, 225);
+    letter-spacing: -4px;
+    
+}
+.box1, .box2{
+    width: 30%;
+    height: 200px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 20px 50px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    
+}
+#infosaboutmaps h2{
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    text-align: center;
+    color: #E94152;
+    font-family: 'Anton', sans-serif;
+    
+}
+.container{
+    height: 500px;
+    background-size: cover;
+    background-image:url("/static/valorant_photos/valomapasso.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 20px 50px rgba(0, 0, 0, 0.4);
+}
+.container2, .container3, .container4, .container5, .container6{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    box-shadow: 20px 50px rgba(0, 0, 0, 0.4);
+}
+.container2{
+    background-image: url('/static/valorant_photos/valorantsplitwallpaper.jpg');
+}
+.container3{
+    background-image: url("/static/valorant_photos/valorantbindwallpaper.jpg");
+}
+.container4{
+    background-image: url("/static/valorant_photos/valoranticeboxwallpaper.jpg");
+}
+.container5{
+    background-image: url("/static/valorant_photos/havenbackground.png");
+}
+.container6{
+    background-image: url('/static/valorant_photos/breezebakcgorund.jpeg');
+}
+.carousel {
+    height: 400px;
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.carousel img{
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+    
+    
+}
+.carousel img:nth-child(4){
+    object-fit: contain;
+    
+}
+#previous, #next{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+#previous{
+    left: 2%;
+}
+#next{
+    right: 2%;
+}
+.fas:hover{
+    color: white;
+}
+.carousel__images,.carousel__images2,.carousel__images3,.carousel__images4,.carousel__images5,.carousel__images6{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.75s;
+}
+@media all and (max-width:1000px){
+    .parallax{
+        min-height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-bottom: 15%;
+    }
+    .container{
+        height: 60vh;
+        width: 100%;
+        transform: translateY(60px);
+        background: url('/static/valorant_photos/ascentmap.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: none;
+        margin: 0 auto;
+        box-shadow: 0 0 20px 0 black;
+    }
+    .container2, .container3, .container4, .container5, .container6{
+        height: 60vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        background-attachment: scroll;
+        box-shadow: 20px 50px rgba(0, 0, 0, 0.4);
+    }
+    .container2{
+        background-image: url('/static/valorant_photos/Split_Map.png');
+    }
+    .container3{
+        background-image: url("/static/valorant_photos/bindbackground.jpeg");
+    }
+    .container4{
+        background-image: url("/static/valorant_photos/iceboxbackground.jpeg");
+    }
+    .container5{
+        background-image: url("/static/valorant_photos/havenbackground.png");
+    }
+    .container6{
+        background-image: url('/static/valorant_photos/breezebakcgorund.jpeg');
+    }
+    .box1, .box2{
+        width: 90%;
+        height: 200px;
+        background: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: none;
+        letter-spacing: 0.2px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        
+    }
+    .containerboxes{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel {
+        height: 400px;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+    }
+    .carousel img{
+        height: 400px;
+        width: 100vw;
+        object-fit: cover;
+        
+        
+    }
+    .carousel img:nth-child(4){
+        object-fit: contain;
+        
+    }
+
+}

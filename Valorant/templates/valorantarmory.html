@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT| Armory</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'valorantarmor.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+</head>
+<body>
+    {% include "/includes/navbarandfooter.html" %}
+    <section class="armorydefinitionpart">
+        <div class="headersinarmory">
+            <span class="armorheader1">VALORANT</span>
+            <span class="armorheader2">ARMORY</span>
+        </div>
+    </section>
+    <section class="buttonofarmory">
+        <div class="buttondivofarmor">
+            <ul>
+                <li><a href="#1">Sidearms</a></li>
+                <li><a href="#2">Rifles</a></li>
+                <li><a href="#3">Smgs</a></li>
+                <li><a href="#4">Sniper</a></li>
+                <li><a href="#5">Shotguns</a></li>
+                <li><a href="#6">Machine Guns</a></li>
+                <li><a href="#7">Melee</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="guns">
+        <div class="sidearms" id="1">
+            <span class="headside">SIDEARMS</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/classicgunimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/gunvideo1.mp4')}}" type="video/mp4">
+                    </video>
+                    <span>CLASSIC</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/ghostimage2.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/soverignghost.mp4')}}">
+                    </video>
+                    <span>GHOST</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/shortyimage4.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/shorty.mp4')}}">
+                    </video>
+                    <span>SHORTY</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/frenzyimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/glitchpopfenzy.mp4')}}">
+                    </video>
+                    <span>FRENZY</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/sheriffimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/reaversheriff.mp4')}}">
+                    </video>
+                    <span>SHERIFF</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="2">
+            <span class="headside">RIFLES</span>
+            <div class="sidearmsguns">
+                
+                <div class="allguns">
+                    <img src="/static/valorant_photos/phantomimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/oniphantom.mp4')}}">
+                    </video>
+                    <span>PHANTOM</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/vandalimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/dragonvandal.mp4')}}">
+                    </video>
+                    <span>VANDAL</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/guardianimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/primeguardian.mp4')}}">
+                    </video>
+                    <span>GUARDIAN</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/bulldogimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/glitchpopbulldog.mp4')}}">
+                    </video>
+                    <span>BULLDOG</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="3">
+            <span class="headside">SMG</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/spectreimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/forsakenspectre.mp4')}}">
+                    </video>
+                    <span>SPECTRE</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/stingerimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/sovereignstinger.mp4')}}">
+                    </video>
+                    <span>STINGER</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="4">
+            <span class="headside">SNIPER RIFLES</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/marshallimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/magepunkmarshall.mp4')}}">
+                    </video>
+                    <span>MARSHALL</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/operatorimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/originoperator.mp4')}}">
+                    </video>
+                    <span>OPERATOR</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="5">
+            <span class="headside">SHOTGUNS</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/buckyimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/primebucky.mp4')}}">
+                    </video>
+                    <span>BUCKY</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/judgeimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/glitchpopjudge.mp4')}}">
+                    </video>
+                    <span>JUDGE</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="6">
+            <span class="headside">MACHINE GUNS</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/aresimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/singularityares.mp4')}}">
+                    </video>
+                    <span>ARES</span>
+                </div>
+                <div class="allguns">
+                    <img src="/static/valorant_photos/odinimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/primeodin.mp4')}}">
+                    </video>
+                    <span>ODIN</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidearms" id="7">
+            <span class="headside">MELEE</span>
+            <div class="sidearmsguns">
+                <div class="allguns">
+                    <img src="/static/valorant_photos/knifeimage.png">
+                    <video class="videoarmory" autoplay loop muted>
+                        <source src="{{url_for('static', filename = 'valorant_photos/ktacknife.mp4')}}">
+                    </video>
+                    <span>KNIFE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+    <script type="text/javascript" src="/static/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".allguns"),{
+		max: 25,
+		speed: 400
+	});
+    </script>
+    <script>
+        const videobckgrn = document.querySelectorAll(".videoarmory");
+        const containr = document.querySelectorAll(".allguns");
+        const imager = document.querySelectorAll(".allguns img");
+        const spanr = document.querySelectorAll(".allguns span");
+        for(let i=0; i<videobckgrn.length;i++){
+            containr[i].addEventListener("mouseover",openvid);
+            function openvid(a){
+                videobckgrn[i].style.display = "block";
+                imager[i].style.display = "none";
+                spanr[i].style.display = "none";
+                
+            }
+            containr[i].addEventListener("mouseout",closevid);
+            function closevid(a){
+                videobckgrn[i].style.display = "none";
+                
+                imager[i].style.display = "block";
+                spanr[i].style.display = "block";
+                videobckgrn[i].currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'valorantregister.css')}}">
+    <title>VALORANT| Register Page</title>
+    <link rel="stylesheet" href="/static/valorantproperties.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+</head>
+<body>
+    {% include "/includes/navbarandfooter.html" %}
+    <section class="register">
+        <form method="post">
+            <label for="username">USERNAME</label>
+            <input type="text" name="username" placeholder="Username">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" placeholder="Password">
+            <label for="verify">VERIFY PASSWORD</label>
+            <input type="password" name="verify" placeholder="Password again">
+            <label for="email">E-MAIL</label>
+            <input type="email" name="email" placeholder="e-mail">
+            <input type="submit" name="buton" class="buttonallow" value="Submit">
+        </form>
+        
+    </section>
+    {% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+</body>
+</html>

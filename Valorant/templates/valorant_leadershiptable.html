@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'valorantleadership.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+    <title>VALORANT| Leadership Table</title>
+</head>
+<body>
+    {% include "/includes/navbarandfooter.html" %}
+    <section class="backgroundphotograph">
+        
+        <span class="headerthebigone">
+            VALORANT <br> Leadership <br> Tables
+        </span>
+    </section>
+    <section class="leadershipfinder">
+            <div class="searchbox">
+        <label for="name" id="name1">Find in leadership table</label>
+        <input type="text" class="name" placeholder="Nickname#label">
+        <i class="fas fa-search"></i>
+            </div>
+    </section>
+    <section class="leadershiptable">
+        <table>
+            <tr>
+                <thead class="part1">
+                    <th><img src="{{url_for('static',filename = 'valorant_photos/valorantsimge2.png')}}"></th>
+                    <th>Leadership table <br> <span>RADYANT</span></th>
+                    <th>PART</th>
+                </thead>
+            <tr>
+                <thead class="part2">
+                    <th>Level</th>
+                    <th>Point</th>
+                    <th>Continuing</th>
+                </thead>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>3</td>
+                    <td>950 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>72</td>
+                    <td>940 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>17</td>
+                    <td>920 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>20</td>
+                    <td>916 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>93</td>
+                    <td>907 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>32</td>
+                    <td>905 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>3</td>
+                    <td>899 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>31</td>
+                    <td>892 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>35</td>
+                    <td>890 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>79</td>
+                    <td>867 <span class="nick">kartanesittnet</span> <span class="labell">#1029</span></td>
+                    <td> <span class="countwon">68</span> game's won</td>
+                </tbody>
+            </tr>
+            
+        </table>
+    </section>
+    {% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+</body>
+</html>

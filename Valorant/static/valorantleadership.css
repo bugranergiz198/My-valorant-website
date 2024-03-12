@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ECE8E1;
+    
+}
+.backgroundphotograph{
+    width: 100%;
+    height: 88vh;
+    background-image: url("/static/valorant_photos/leadership3.jpeg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.date{
+    position: absolute;
+    left: 9%;
+    top: 43%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.headerthebigone{
+    position: absolute;
+    bottom: 1%;
+    left: 8%;
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 4rem;
+    
+}
+.searchbox{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    height: 50px;
+    width: 200px;
+    margin: 0 10px;
+    outline: red;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.name:focus{
+    width: 300px;
+}
+#name1{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.fas{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.fas:hover{
+    color: rgb(197, 58, 58);
+}
+.leadershiptable{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+table{
+    width: 80%;
+    
+}
+.part1 th{
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+.part1 th span{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+}
+.part1 th:nth-child(1){
+    width: 10%;
+}
+.part1 th:nth-child(1) img{
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+}
+.part1 th:nth-child(3){
+    width: 15%;
+}
+.part2{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.part2 th:nth-child(2){
+    text-align: start;
+    padding-left: 5%;
+    color: rgb(129, 114, 28);
+}
+tbody td{
+height: 50px;
+background-color: #DEDCD5;
+font-family: 'Odibee Sans', cursive;
+font-size: 20px;
+}
+tbody td:nth-child(1){
+    text-align: center;
+}
+tbody td:nth-child(2){
+    padding-left: 5%;
+}
+.nick{
+    padding-left: 20%;
+}
+tbody td:nth-child(2) .labell{
+    color: grey;
+}
+tbody td:nth-child(3){
+    color: grey;
+    text-align: center;
+}
+.countwon{
+    color: black;
+    margin: 0 8px;
+}
+@media all and (max-width:900px){
+    .headerthebigone{
+        position: absolute;
+        bottom: 1%;
+        left: 2%;
+        font-size: 3.2rem;
+        
+    }
+    .date{
+        position: absolute;
+        left: 3%;
+        top: 50%; 
+    }
+    .name:focus{
+        width: 200px;
+    }
+    #name1{
+        font-size: 15px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    table{
+        width: 100%;
+    }
+    .leadershiptable{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+}

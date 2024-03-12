@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.armorydefinitionpart{
+    width: 100vw;
+    height: 90vh;
+    background-image:url("/static/valorant_photos/valorantarmorbackground.jpeg");
+    background-size: cover;
+    position: relative;
+}
+.headersinarmory{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.armorheader1{
+    font-size: 6rem;
+    color: #fff;
+    font-family: 'Saira Stencil One', cursive;
+}
+.armorheader2{
+    font-size: 5rem;
+    font-family: 'Nerko One', cursive;
+    color: #1B30AD;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 2px;
+}
+.buttonofarmory{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.buttondivofarmor{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttondivofarmor ul{
+    display: flex;
+    justify-content: center;
+}
+.buttondivofarmor ul li{
+    list-style: none;
+}
+.buttondivofarmor ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 8px;
+    font-family: 'Saira Stencil One', cursive;
+    padding: 10px 30px;
+    background-color: #000;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.buttondivofarmor ul li a:hover{
+    background-color: red;
+    color: black;
+}
+.guns{
+    width: 100vw;
+    
+    margin-top: 10%;
+}
+.sidearms{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    background-color: #000;
+}
+.sidearmsguns{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-80px);
+    
+}
+.sidearms .headside{
+    font-size: 5rem;
+    font-family: 'Saira Stencil One', cursive;
+    margin-left: 2%;
+    color: red;
+    transform: translateY(-80px);
+}
+
+.sidearmsguns img{
+width: 200px;
+height: 200px;
+object-fit: cover;
+
+}
+.sidearmsguns .videoarmory{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+.sidearmsguns span{
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    font-size: 1.5rem;
+    color: red;
+    background-color: #fff;
+    transform: translateY(10px);
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.allguns{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 200px;
+height: 250px;
+background-color: rgb(236, 218, 218);
+margin-left: 5px;
+border-radius: 5px;
+box-shadow: 10px 20px #111A23;
+}
+@media screen and (max-width:1100px){
+    .armorydefinitionpart{
+        background-image: url("/static/valorant_photos/armorymobile.png");
+    }
+    .headersinarmory{
+        left: 0;
+        top: 10%;
+        align-items: center;
+        width: 100vw;
+    }
+    .armorheader1{
+        font-size: 4rem;
+        color: #fff;
+        font-family: 'Saira Stencil One', cursive;
+    }
+    .armorheader2{
+        font-size: 3rem;
+        color: #E94152;
+    }
+    .buttonofarmory{
+        width: 100vw;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .buttondivofarmor ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transform: translateY(0);
+    }
+    .buttondivofarmor{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttondivofarmor ul li a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 0;
+        font-family: 'Saira Stencil One', cursive;
+        padding: 10px 18px;
+        letter-spacing: 0;
+        transition: 0.4s;
+    }
+    .buttondivofarmor ul li{
+        list-style: none;
+        margin-top: 30px;
+        margin-right: 5px;
+    }
+    .sidearms .headside{
+        font-size: 4rem;
+        font-family: 'Saira Stencil One', cursive;
+        
+        transform: translateY(80px);
+        margin: 0 auto;
+    }
+    .sidearmsguns{
+        display: flex;
+        justify-content: space-around;
+        transform: translateY(100px);
+        flex-wrap: wrap;
+        height: 110vh;
+    }
+    .sidearms{
+        width: 100vw;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        
+    }
+    .allguns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 200px;
+        height: 250px;
+        background-color: rgb(236, 218, 218);
+        margin-left: 0;
+        margin-top: 5px;
+        border-radius: 5px;
+        box-shadow: 10px 20px #000;
+        
+        }
+    .sidearms:nth-child(1), .sidearms:nth-child(2){
+        min-height: 250vh;
+        justify-content: space-around;
+        
+    }
+    
+    .sidearms:nth-child(1) .sidearmsguns{
+        height: 200vh;
+    }
+    .sidearms:nth-child(1) .headside{
+        transform: translateY(80px)
+    }
+    .sidearms:nth-child(2) .headside{
+        transform: translateY(80px);
+    }
+    .sidearms:nth-child(6) .headside{
+        transform: translateY(100px);
+    }
+    .sidearms:nth-child(2) .sidearmsguns{
+        height: 200vh;
+        
+    }
+    .sidearms:nth-child(7) .sidearmsguns{
+        height: 90vh;
+    }
+}

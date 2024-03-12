@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'navbarandfooter.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Orelega+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="navbar">
+            <div class="contento">
+            <div class="logo"><a href="/"><img class="image" src="https://styles.redditmedia.com/t5_2tavq/styles/communityIcon_rhpcgbf8rvs21.png" alt="landmark"></a></div>
+            
+            <ul class="links">
+                <li><a href="#" class="desktoplink">GAME INFORMATION +</a>
+                    <ul>
+                        <li><a href="agents">Agents</a></li>
+                        <li><a href="maps">Maps</a></li>
+                        <li><a href="armory">Armory</a></li>
+                    </ul>
+                </li>
+                <li><a href="news">NEWS</a></li>
+                <li><a href="leadership-table">LEADERSHIP TABLE</a></li>
+
+                <li><a href="#" class="desktoplink">SUPPORT +</a>
+                    <ul>
+                        <li><a href="property">Properties</a></li>
+                        <li><a href="supportpage">Support</a></li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <a href="#" class="desktoplink">SOCIAL +</a>
+                    
+                    <ul>
+                        <li><a href="https://www.instagram.com/valoranttr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/valoranttr" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/PlayVALORANT/" target="_blank">Facebook</a></li>
+                        <li><a href="https://discord.com/invite/6aTVuEB" target="_blank">Discord</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#" class="desktoplink"><i class="fas fa-globe-europe" id="worldicon"></i></a>
+                    <ul>
+                        <li><a href="#" class="lang">English</a></li>
+                        <li><a href="#" class="lang">Turkish</a></li>
+                        <li><a href="#" class="lang">Deutsche</a></li>
+                        <li><a href="#" class="lang">Polish</a></li>
+                        <li><a href="#" class="lang">Japanese</a></li>
+                        <li><a href="#" class="lang">Chinese</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        <i class="fas fa-bars fa-2x" id="hbutton"></i>
+        </div>
+        </header>
+    </div>
+    
+    <script>
+const hamburbutton = document.querySelector("#hbutton");
+const linksmenu = document.querySelector(".links");
+const appeardisappear = document.querySelectorAll(".desktoplink");
+const mediaQuery = window.matchMedia('(max-width: 900px)');
+const selectul = document.querySelectorAll(".contento .links ul");
+
+let newvalue = 0
+ for (let i = 0; i < appeardisappear.length; i++) {
+    
+    appeardisappear[i].addEventListener("click", function first1(){
+        newvalue +=1
+        if (newvalue == 1){selectul[i].style.display = "block";}
+    });
+    appeardisappear[i].addEventListener("click", function first2(){
+        
+        if (newvalue == 2){selectul[i].style.display = "none";
+    newvalue -=2
+    }
+    });
+ }
+hamburbutton.addEventListener("click",run1);
+let value = 0
+
+function run1(){
+value+=1
+if(value ==1){
+    linksmenu.style.right = "0";
+    
+    console.log(value)
+}
+}
+hamburbutton.addEventListener("click",run2);
+
+function run2(){
+    
+    if (value ==2){
+        linksmenu.style.right = "-100%";
+        value-=2
+    }
+}
+    </script>
+</body>
+</html>

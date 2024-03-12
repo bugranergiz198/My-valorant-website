@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#agents{
+    min-height: 110vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #08001b;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 14rem;
+    position: relative;
+    transform: translateY(20%);
+}
+.first{
+    font-size: 11em;
+    color: #E94152;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 0;
+    letter-spacing: -10px;
+
+}
+.second{
+    font-size: 5rem;
+    color: white;
+    font-family: 'Permanent Marker',cursive;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+}
+.tinyboxes{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(70px);
+}
+.characters{
+    height:9em;
+    width: 9em;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 3rem 0.5rem 0 0.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.characters::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: all .6s ease;
+    
+}
+.characters::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: all .6s ease;
+}
+.characters:hover::after, .characters:hover::before{
+border-color: #1779ff;
+width: 100%;
+height: 100%;
+
+}
+
+.kjimg{
+    display: inline-block;
+    height: 95%;
+    width: 95%;
+    object-fit: contain;
+    
+}
+
+.pagemenus{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: none;
+}
+.herobackground{
+    min-height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.background{
+    width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+}
+
+.leftbar{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+    background: rgba(0, 0, 0,0.4);
+    
+    
+    
+}
+.rightbar{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0,0.4);
+    
+}
+.firstskill img{
+    height: 3em;
+    width: 3em;
+}
+#phoenixbackground .firstskill img, #razebackground .firstskill img, #cypherbackground .firstskill img, #brimstonebackground .firstskill img, #jettbackground .firstskill img, #viperbackground .firstskill img, #sovabackground .firstskill img{
+    height: 6em;
+    width: 6em;
+}
+#skyebackground .firstskill img:nth-child(1), #skyebackground .firstskill img:nth-child(2), #skyebackground .firstskill img:nth-child(3){
+    height: 5rem;
+    width: 5rem;
+}
+
+
+.firstskill{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.firstskill p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color: rgb(240, 224, 224);
+    
+}
+.firstskill h3{
+    margin: 8px 0;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(87, 67, 67);
+}
+.buttonback{
+    position: absolute;
+    cursor: pointer;
+    bottom: 1%;
+    left: 48%;
+    color: whitesmoke;
+    opacity: 0.7;
+    transition: 1s;
+    
+}
+.buttonback:hover{
+    transform: rotate(360deg);
+}
+@media screen and (max-width:1200px){
+    
+    .leftbar{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background: transparent;
+        transition: all 0.4s ease-in-out;
+        padding: 0;
+    }
+    .rightbar{
+        width: 80%;
+        background: transparent;
+        padding: 0;
+    }
+    .firstskill{
+        width: 22%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+        background: rgba(0, 0, 0,0.25);
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .firstskill img{
+        height: 4em;
+        width: 4em;
+        margin: 0;
+    }
+
+    #sovabackground .leftbar .firstskill img{
+        height: 3em;
+        width: 3em;
+        margin: 0;
+    }
+    .firstskill p{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        line-height: 1.2rem;
+        font-size: 1.1rem;
+        color: rgb(240, 224, 224);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        display: none;
+    }
+    .firstskill h3{
+        margin: 0 8px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(87, 67, 67);
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        
+    }
+    .rightbar .firstskill p{
+        order: -3;
+    }
+    .rightbar .firstskill img{
+        order: -1;
+    }
+    .rightbar .firstskill h3{
+        order: -2;
+    }
+    .rightbar{
+        align-items: flex-end;
+    }
+    
+    .first{
+        font-size: 7em;
+        color: #E94152;
+        font-family: 'Bebas Neue', cursive;
+        z-index: 0;
+        letter-spacing: -10px;
+    
+    }
+    .second{
+        font-size: 4rem;
+        color: white;
+        font-family: 'Permanent Marker',cursive;
+        letter-spacing: 0.5rem;
+        position: absolute;
+        bottom: 5rem;
+        z-index: 1;
+    }
+    .header{
+        transform: translateY(30%);
+    }
+    .tinyboxes{
+        transform: translateY(0);
+    }
+    .characters{
+        margin: 2rem 0.8rem 0 0.5rem;
+    }
+    
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT| Agents</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'valorantagents.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'valorantmobile.css')}}">
+    
+</head>
+<body>
+    {% include "/includes/navbarandfooter.html" %}
+    <section id="agents">
+        
+    <div class="header">
+    <p class="first">VALORANT</p>
+    <p class="second">Agents</p>
+    </div>
+    
+    <div class="tinyboxes">
+        <div class="characters" id="killjoydiv">
+            <img src="/static/valorant_photos/killjoy2.png" class="kjimg">
+        </div>
+        <div class="characters" id="omendiv">
+            <img src="/static/valorant_photos/omen2.png" class="kjimg">
+        </div>
+        <div class="characters" id="phoenixdiv">
+            <img src="/static/valorant_photos/phoenix2.png" class="kjimg">
+        </div>
+        <div class="characters" id="razediv">
+            <img src="/static/valorant_photos/raze2.png" class="kjimg">
+        </div>
+        <div class="characters" id="sagediv">
+            <img src="/static/valorant_photos/sage2.png" class="kjimg">
+        </div>
+        <div class="characters" id="skyediv">
+            <img src="/static/valorant_photos/skye2.png" class="kjimg">
+        </div>
+        <div class="characters" id="reynadiv">
+            <img src="/static/valorant_photos/reyna2.png" class="kjimg">
+        </div>
+        <div class="characters" id="cypherdiv">
+            <img src="/static/valorant_photos/cypherfarkli.png" class="kjimg">
+        </div>
+        <div class="characters" id="astradiv">
+            <img src="/static/valorant_photos/astra4.png" class="kjimg">
+        </div>
+        <div class="characters" id="brimstonediv">
+            <img src="/static/valorant_photos/brim2.png" class="kjimg">
+        </div>
+        <div class="characters" id="jettdiv">
+            <img src="/static/valorant_photos/jett2.png" class="kjimg">
+        </div>
+        <div class="characters" id="yorudiv">
+            <img src="/static/valorant_photos/yoru3.png" class="kjimg">
+        </div>
+        <div class="characters" id="viperdiv">
+            <img src="/static/valorant_photos/viper3.png" class="kjimg">
+        </div>
+        <div class="characters" id="sovadiv">
+            <img src="/static/valorant_photos/sova2.png" class="kjimg">
+        </div>
+        <div class="characters" id="breachdiv">
+            <img src="/static/valorant_photos/breachfarkli.png" class="kjimg">
+        </div>
+        
+    </div>
+
+    </section>
+    
+<div class="pagemenus">
+
+<section class="herobackground" id="killjoybackground">
+    
+    <video class="background" autoplay loop muted>
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Killjoy Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+     <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/killjoy_c.png">
+            <h3>Nanoswarm (C – 200 credits, up to 2 charges)</h3>
+            <p>A grenade that turns invisible and is remotely detonated like Cypher’s cages. It deals a high amount of damage and can kill enemies very quickly if they don’t leave its radius quickly.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/Alarmbot.png">
+            <h3>Alarmbot (Q – 200 credits)</h3>
+            <p>Equips and deploys an invisible bot that acts like a proximity mine, jumping to an enemy that comes within its range and explodes. When the mine is set off or destroyed, you’ll see a red visual alert on the map.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/displayicon.png">
+            <h3>Turret (E – free, can be placed again 20 seconds after recalling or 45 seconds after being destroyed)</h3>
+            <p>Deploys a turret that fires on enemies within a 180 degree cone. By default, her Turret will be placed outwardly but you can press E to rotate so it faces you. You cannot manually spin the Turret around like you can with Sage’s wall.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/Lockdown.png">
+            <h3>Lockdown (7 orb points)</h3>
+            <p>The source of this agent’s name is most likely inspired by her ultimate, which places a device that emits a bubble dome in a large radius. After 13 seconds, it will detonate. All enemies who are hit will be severely slowed and unable to use their gun or abilities for 8 seconds.</p>
+        </div>
+    </div> 
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+</section>
+
+<section class="herobackground" id="omenbackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - Omen Valorant Live Wallpaper.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skil3.png">
+            <h3>Shrouded Step (C – 100 credits)</h3>
+            <p>A short ranged teleport that works similarly to Reaper’s E in Overwatch. Useful for getting onto high ground, across hallways, and into windows.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skil2.png">
+            <h3>Paranoia (Q – 200 credits)</h3>
+            <p>Fires a projectile that can go through walls and reduces the vision of ALL agents that it passes through.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skil1.png">
+            <h3>Dark Cover (E – free, 30 second cooldown)</h3>
+            <p>A smoke grenade that can be fired through walls.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skil4.png">
+            <h3>From the Shadows (X – seven ultimate orbs)</h3>
+            <p>Open up a map and click on it to teleport to that location (can be anywhere on the map). While Omen teleports, he distorts the minimaps of his enemies but the noise it creates is very loud so they can track it that way.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i> 
+    </div>
+    
+</section>
+<section class="herobackground" id="phoenixbackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Phoenix Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/1-phoenix-basic-ability-blaze.png">
+            <h3>Blaze (C – 200 credits)</h3>
+            <p>A wall of fire that you can curve as it casts. It obscures vision, damages enemies that walk through/stand on it, and heals you if you’re standing in it. It can be used to block choke points or protect you as you or your allies plant the spike.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/2-phoenix-basic-ability-curveball.png">
+            <h3>Curveball (Q – 200)</h3>
+            <p>A flashbang that you can quickly curve around corners. It’s an ideal engage tool but be careful because it can blind you or your allies if you misfire.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/3-phoenix-signature-ability-hot-hands.png">
+            <h3>Hothands (E – free, refreshes after two kills)</h3>
+            <p>Effectively a molotov grenade that also heals you if you stand in its flames and deals AoE damage to enemies within it. Instead of being on a cooldown, this ability refreshes after you get two kills.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/4-phoenix-ultimate-ability-run-it-back.png">
+            <h3>Run it Back (X – 6 ultimate orbs)</h3>
+            <p>After casting at a location, you have a short amount of time where if you die, you will come back to life and return to where you cast it.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="razebackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/Raze Video Wallpaper for Windows _ Valorant.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/raze4.png">
+            <h3>Boom Bot (C – 200 credits)</h3>
+            <p>Equips and sets down a Boom Bot (a robot that looks like Roomba) which goes in a straight line and then bounces off walls it runs into.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/raze1.png">
+            <h3>Blast Pack (Q – 200 credits)</h3>
+            <p>Throws a Blast Pack which will stick to a surface until you detonate it again or its timer runs out. Upon detonating, it deals AoE damage and displaces other agents in its radius (it does not damage Raze).</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/raze3.png">
+            <h3>Paint Shells (E – free, resets after two kills)</h3>
+            <p>Throws a grenade that detonates into smaller cluster explosions after a short delay. It has two different throwing options, left-click quickly throws the grenade in a straighter arc while right-click is more of a lob.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/razeu.png">
+            <h3>Showstopper (X – 6 ultimate orbs)</h3>
+            <p>Fires a rocket launcher that causes a massive explosion upon impact, dealing devastating damage to everything around it. It’s basically Jinx’s rocket in Valorant form!</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="sagebackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Sage Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sage3.png">
+            <h3>Barrier Orb (C – 400 credits)</h3>
+            <p>Creates a wall that can be destroyed but has a lot of health. You can change the angle of the wall to spin it how you’d like.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sages2.png">
+            <h3>Slow Orb (Q – 100 credits)</h3>
+            <p>Throws an orb that explodes and spreads, slowing all agents that are within it. While moving through, agents are grounded and make a lot of noise with their steps.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sage1.png">
+            <h3>Heal Orb (E – free, 35 second cooldown)</h3>
+            <p>Heals an ally (left-click) or yourself (right-click) back over time back to full health, it is not a burst heal.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sage4.png">
+            <h3>Resurrection (R – seven ultimate orbs)</h3>
+            <p>Brings a dead ally back to life to full health.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="skyebackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Skye Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skye3.png">
+            <h3>Regrowth (C – 200 credits, one charge)</h3>
+            <p>EQUIP a healing trinket. HOLD FIRE to channel, healing allies in range and line of sight. Can be reused until her healing pool is depleted. Skye cannot heal herself.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skyes2.png">
+            <h3>Trailblazer (Q – 200 credits, one charge)</h3>
+            <p>EQUIP a Tasmanian tiger trinket. FIRE to send out and take control of the predator. While in control, FIRE to leap forward, exploding in a concussive blast and damaging directly hit enemies</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skye4.png">
+            <h3>Guiding Light (E – 100 credits, up to three charges)</h3>
+            <p>EQUIP a hawk trinket. FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to transform it into a flash.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/skye1.png">
+            <h3>Seekers (X – 7 orb points)</h3>
+            <p>EQUIP a Seeker trinket. FIRE to send out three Seekers to track down the three closest enemies. If a Seeker reaches its target, it nearsights them.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="reynabackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Reyna Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/reyna1.png">
+            <h3>Leer (C – 200 credits)</h3>
+            <p>Leer equips and fires a purple eye (kind of like the eye of Sauron) that Nearsights all enemies who see it.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/reynas2.png">
+            <h3>Devour (Q – 100 credits, shares resource with E)</h3>
+            <p>It shares charges (up to four total per round) with Dismiss, the other ability that uses Soul Orbs. Using Devour casts a self-heal on Reyna that is much faster than Sage’s heal. It continually heals throughout its duration and can Overheal up to 150 (max health + 50).</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/reyna3.png">
+            <h3>Dismiss (E – 200 credits, shares resource with Q)</h3>
+            <p>you become intangible for a short period of time. Intangible means that you cannot be harmed. In exchange, you cannot fire or use abilities while intangible.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/reyna4.png">
+            <h3>Empress (X – 6 ultimate orbs)</h3>
+            <p>Reyna’s ultimate, Empress, buffs her by increasing her firing rate, reload speed, and the speed of switching between guns and abilities.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="cypherbackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Cypher Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/cypher4.png">
+            <h3>Trapwire (C – 200 credits)</h3>
+            <p>Places a tripwire that tethers and reveals enemies that walk through it. After walking through, they have a chance to destroy the device – if they do not, they’ll get dazed.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/cyphers2.png">
+            <h3>Cyber Cage (Q – 100 credits )</h3>
+            <p>Places an invisible trap on the ground that Cypher can choose to trigger from anywhere as long as he’s looking toward it (even works through walls).</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/cypher1.png">
+            <h3>Spycam (E – free, can recall to recast)</h3>
+            <p>Throws an invisible spycam that you can switch to the POV of to watch areas. The camera remains invisible until turned on, so your enemies will be able to see and hear it when you’re looking through it.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/cypher3.png">
+            <h3>Neural Theft (X – seven ultimate orbs)</h3>
+            <p>Cypher tosses his hat onto the corpse of an enemy that recently died to grant a brief reveal of where all remaining enemies are.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="astrabackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/valorant_photos/astra.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/astraupgraded1.png">
+            <h3>Stars (Astra’s resource, 200 credits each)</h3>
+            <p>All of Astras main abilities use a resource called Stars which she places on the map. These Stars can be already placed while in warmup time and show to enemies only 2 seconds before the round starts.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/astraupgraded2.png">
+            <h3>Nova Pulse (Q – 1 charge, 12 second recharge)</h3>
+            <p>Astra’s Q, Nova Pulse, stuns all agents inside it after a brief delay. This can make it a great combination with Gravity Well as you can create your own wombo combo on your own.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/astraskill3.png">
+            <h3>Nebula (E – 2 charges, 14 second recharge)</h3>
+            <p>As a controller, it’s natural that Astra would have smokes since the class is expected to help facilitate the battlefield from a macro perspective.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/astraskill4.png">
+            <h3>Astral Form/Cosmic Divide (X – 7 orb points)</h3>
+            <p>Astra uses her ultimate button to see the map from her Astral Form and fly around to place her abilities. After a brief delay upon being cast, Cosmic Divide creates a huge wall across the map.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="brimstonebackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/brimstone.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/brimm2.png">
+            <h3>Stim Beacon (C – 100 credits)</h3>
+            <p>Equips and tosses a beacon that emits an AoE buff within its radius called “RapidFire”.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/brimm3.png">
+            <h3>Incendiary (Q – 300 credits)</h3>
+            <p>Equips a grenade launcher that effectively fires a molotov, leaving flames that deal AoE damage to any agent that is in it.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/brimm4.png">
+            <h3>Sky Smoke (E – 100)</h3>
+            <p>Opens up a tactical map that allows Brimstone to launch up to three smoke grenades from the sky. The smoke grenades are very opaque and hard to see through (compared to other smokes like Omen’s which are hollow)</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/brim1.png">
+            <h3>Orbital Strike (X – six ultimate orbs)</h3>
+            <p>Opens up a tactical map (with a larger area than Sky Smoke’s) that allows Brimstone to fire a massive laser airstrike after a short delay.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="jettbackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Jett Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/jett3.png">
+            <h3>Cloudburst (C – 100 credits)</h3>
+            <p>A smoke grenade that doesn’t last as long as others, but does the job. Similar to Phoenix’s fire wall, you can curve it mid flight.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/jett1.png">
+            <h3>Updraft (Q – 100 credits)</h3>
+            <p>A jump boost that seems simple at first but has more uses than you’d think.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/jetts2.png">
+            <h3>Tailwind (E – free, refreshes after two kills )</h3>
+            <p>A quick dash in the direction that Jett is moving.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/jett4.png">
+            <h3>Blade Storm (X – six ultimate orbs)</h3>
+            <p>Draw kunai blades that have incredible accuracy. Left click throws a single knife while right click throws all at once.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="yorubackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - YORU  VALORANT WALLPAPER ENGINE.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/yoruskill1.png">
+            <h3>Bait (C – 100 credits, 2 charges)</h3>
+            <p>Yoru’s first ability, Bait, is able to simulate footsteps in a selected location and at all times. Although the sound of those footsteps are noticeably different from normal steps caused by another player, it definitely should cause a slight distraction for a moment.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/yoruskill3.png">
+            <h3>Stun (Q – 200 credits, 2 charges)</h3>
+            <p>Yoru’s second ability, Stun, basically is a flash like Phoenix, Breach and Skye have in their ability set. The main difference in Yoru’s flash is the condition that it has to hit or bounce off of some kind of surface to be able to explode afterward.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/yoruskill2.png">
+            <h3>Uninvited Guest (E – one free cast, resets after 2 kills)</h3>
+            <p>Yoru’s Signature ability is Uninvited Guest which literally can make him a surprise factor in certain situations. You have two options: Either you are binding a portal to come back to at a fixed location on the map or you are sending the portal on a trip.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/yoruskill4.png">
+            <h3>Spatial Drift (X – 7 orb points)</h3>
+            <p>Yoru can move a certain amount of time completely invisible and invulnerable and also leave that state at any time.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="viperbackground">
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/Viper Valorant Wallpaper Live 4K.mp4">
+    </video>
+    
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/1-viper-basic-ability-snake-bite.png">
+            <h3>Snakebite (C – 100 credits)</h3>
+            <p>A projectile canister that explodes when it hits the ground (it can bounce off walls). It leaves a pool of poison that slows agents walking through it and deals damage like a molotov.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/2-viper-basic-ability-poison-cloud.png">
+            <h3>Poison Cloud (Q – 200 credits, fuel-based)</h3>
+            <p>Throws a grenade that will emit toxic gas after you reactivate the ability to turn it on. It will emit gas until you turn it off or until you run out of your toxic fuel.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/3-viper-signature-ability-toxic-screen.png">
+            <h3>Toxic Screen (E – free, fuel-based)</h3>
+            <p>Fires a line of toxic gas emitters that can be fired a very far range. Similar to Poison Cloud, this effect can be turned on and off. While on, it creates a persisting wall of toxic gas as long as you have enough fuel. The wall blocks vision and deals decaying damage.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos//4-viper-ultimate-ability-vipers-pit.png">
+            <h3>Viper’s Pit (X – 7 ultimate orbs)</h3>
+            <p>After choosing a spot on the ground near her, Viper creates a huge cloud of toxic gas that effectively acts like a room or building since you cannot see through Viper’s Pit at all.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="sovabackground">
+
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Sova Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sovaskil4.png">
+            <h3>Owl Drone (C – 300 credits)</h3>
+            <p>Equip and fire an owl drone that you take POV control of. While flying the owl, you can fire a dart which temporarily reveals its target’s location.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sovaskil3.png">
+            <h3>Shock Bolt (Q – 100 credits)</h3>
+            <p>Equip and fire a lightning arrow that deals AoE splash damage. The closer an agent is to the blast, the more damage they will take.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sovaskil2.png">
+            <h3>Recon Bolt (E – free, 35 second cooldown)</h3>
+            <p>Equip and fire a recon arrow that works similarly as the Shock Bolt in terms of firing the arrow (being able to pull for more distance or bounce up to two times).</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/sovaskilupgrdd.png">
+            <h3>Hunter’s Fury (X – seven ultimate orbs)</h3>
+            <p>Fire up to three global arrows that pierce through terrain in a straight line.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+    
+</section>
+<section class="herobackground" id="breachbackground">
+    
+    <video autoplay loop muted class="background">
+        <source src="/static/images/valorant_characters/yt1s.com - 4K60FPS Breach Animated Wallpaper  Valorant Fanart.mp4">
+    </video>
+    
+    <div class="leftbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/breachs2.png">
+            <h3>Aftershock (C – 100 credits)</h3>
+            <p>Fires an explosive that blasts out the other side of a wall after a short delay, dealing AoE damage to all agents within its explosion. The closer they are, the more damage they’ll take.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/breach1.png">
+            <h3>Flashpoint (Q – 200 credits)</h3>
+            <p>Fires a charge that works similarly to Aftershock, but instead of a damaging explosion, it’s a flashbang that blinds all agents within its zone.</p>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div class="firstskill">
+            <img src="/static/valorant_photos/breach3.png">
+            <h3>Fault Line (E – free, 35 second cooldown)</h3>
+            <p>An ability that you must equip and charge before firing that creates an earthquake effect and disorients all agents within its effect. Like Breach’s other abilities, it can be cast through terrain with a cast indicator on the minimap.</p>
+        </div>
+        <div class="firstskill">
+            <img src="/static/valorant_photos/breach4.png">
+            <h3>Rolling Thunder (X – 7 ultimate orbs)</h3>
+            <p>Fault Line’s big brother, Rolling Thunder, launches a wider earthquake affect which disorients but also knocks up agents within its blast, leaving them vulnerable as sitting ( or flying?) ducks.</p>
+        </div>
+    </div>
+    <div class="buttonback">
+        <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+    </div>
+
+</section>
+</div>
+{% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+<script src="/static/valorantagentsmenu.js"></script>
+<script>
+    const idb = document.querySelectorAll("img")
+    idb[68].style.height = "2.5rem";
+    idb[68].style.width = "2.5rem";
+    idb[38].style.height = "2rem";
+    idb[38].style.width = "2rem";
+</script>
+</body>
+</html>

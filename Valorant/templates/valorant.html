@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VALORANT| Türkiye</title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Orelega+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'valoranthomepage.css')}}" rel="stylesheet" type="text/css">
+  <link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="{{url_for('static',filename = 'valorantmobile.css')}}">
+  <body>
+    
+    <section id="homepage">
+        {% include "/includes/navbarandfooter.html" %}
+<div class="video-container">
+    <video class="mainbackground" autoplay loop muted>
+        <source src="{{url_for('static', filename = 'valorant_photos/anaekranvalo.mp4')}}">
+    </video>
+</div>
+
+<div class="slogan">
+    <p class="slg"><span> 5v5 character-based tactical shooter game</span></p>
+    <img class="resim" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Valorant_logo.svg/1024px-Valorant_logo.svg.png">
+    <a href="registerpage" class="playbutton">PLAY FREE</a>
+</div>
+    </section>
+    <section id="page2">
+        <span class="backgroundtext">WE ARE</span>
+        <p class="newnews">NEWS</p>
+        <a href="news" class="gotonews">GO NEWS <i class="fas fa-arrow-right"></i></a>
+        <span class="backgroundtext2">VALORANT</span>
+        
+        <div class="newsandphotos">
+            <div class="block 1">
+                <img src="{{url_for('static',filename = 'valorant_photos/valorantblock.jpeg')}}" class="phts">
+                <span class="date">30.04.21</span>
+                <span class="updating">GAME UPGRADES</span>
+                <p class="writing">There are some arrangements that we have made for Valorant.</p>
+            </div>
+            <div class="block 2">
+                <img src="{{url_for('static',filename = 'valorant_photos/valorantblock.jpeg')}}" class="phts">
+                <span class="date">27.04.21</span>
+                <span class="updating">GAME UPGRADES</span>
+                <p class="writing">There are some arrangements that we have made for Valorant.</p>
+            </div>
+            <div class="block 3">
+                <img src="{{url_for('static',filename = 'valorant_photos/valorantblock.jpeg')}}" class="phts">
+                <span class="date">25.04.21</span>
+                <span class="updating">GAME UPGRADES</span>
+                <p class="writing">There are some arrangements that we have made for Valorant.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="page3">
+        <span class="wearevalo">OUR NAME IS VALORANT.</span>
+        <div class="trailer">
+            <div class="writes">
+                <div class="thecard">
+                    <div class="frontcard">
+                        <p>PLEASE CLICK THE BUTTON BELOW FOR GETTING INFORMATION</p>
+                        <a href="#writes" class="rotateclick">CLICK FOR GETTING INFORMATION</a>
+                    </div>
+                    <div class="backcard">
+                        <h3>DON'T RECOGNIZE LIMIT!</h3>
+                <p>
+                    Combine your style and experience in a global, competitive scene. You have 13 rounds to attack and defend with weapons and tactical abilities. Since you only have one life per turn, you need to think faster than your opponents if you want to survive. Compete in both ranked and unranked modes, as well as modes like Survival and Spike Rush.
+                </p>
+                    </div>
+                </div>
+            </div>
+            <iframe width="700" height="370" src="https://www.youtube.com/embed/IhhjcB2ZjIM">
+            </iframe>
+        </div>
+    </section>
+    {% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+    <script src="{{url_for('static', filename = 'valohomepage.js')}}">
+
+    </script>
+  </body>
+</html>

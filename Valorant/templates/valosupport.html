@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT| Support</title>
+</head>
+<link rel="stylesheet" href="{{url_for('static',filename = 'valorantsupport.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+<link rel="icon" href="/static/valorant_photos/icons8-valorant-48.png" type="image/x-icon"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<body>
+    {% include "/includes/navbarandfooter.html" %}
+    <section class="background">
+        
+        <img src="/static/valorant_photos/supportbackground10.jpeg">
+        <input type="text" class="searchbox" placeholder="How can we help you?">
+        <i class="fas fa-search" id="srch"></i>
+        <i class="fas fa-search fa-2x" id="srch2"></i>
+    </section>
+    <section class="menuiconsbutons">
+        <div class="shortwidth">
+            <div class="boxblock1">
+            <img src="https://theme.zdassets.com/theme_assets/43400/ba612da33c46d111a5fda8d2ca9691389d5fa0e6.png">
+            <span>RETURN POLICY</span>
+            </div>
+            <div class="boxblock1">
+            <img src="https://theme.zdassets.com/theme_assets/43400/70cd3bd5c7b05d5988f0336d0216133817e9f5fa.svg">
+            <span>BENEFICIAL CODE ISSUES</span>
+            </div>
+            <div class="boxblock1">
+            <img src="https://theme.zdassets.com/theme_assets/43400/933d7771a96c7132e495431dec34b3c52d712abc.svg">
+            <span>ACCOUNT RESCUE</span>
+            </div>
+            <div class="boxblock1">
+            <img src="https://theme.zdassets.com/theme_assets/43400/924dadff500d6f45684359b88cf04a796e06467d.svg">
+            <span>UNUSED RETURN CONTENT</span>
+            </div>
+        </div>
+    </section>
+    <section class="gethelp">
+        <span class="gethelpheader">Choose a category for getting help</span>
+    <div class="generaldivbox">
+        <div class="divboxhelp">
+            <img src="https://theme.zdassets.com/theme_assets/43400/9185e4ca4bc7390c56e701e3404b2671a34b5d65.svg">
+            <span>VALORANT Essential informations and FAQ</span>
+        </div>
+        <div class="divboxhelp">
+            <img src="https://theme.zdassets.com/theme_assets/43400/53a54cf6bfeff80059e5241343f7632fc663cd16.svg">
+            <span>VALORANT Essential informations and FAQ</span>
+        </div>
+        <div class="divboxhelp">
+            <img src="https://theme.zdassets.com/theme_assets/43400/d69f864017a214cd8e338b21cd222048064c9c1f.svg">
+            <span>VALORANT Essential informations and FAQ</span>
+        </div>
+        <div class="divboxhelp">
+            <img src="https://theme.zdassets.com/theme_assets/43400/9d4683c6e8c916fcb8260c8adb1a81baa001fd20.svg">
+            <span>VALORANT Essential informations and FAQ</span>
+        </div>
+    </div>
+        <div class="helpingbuton">
+            <span class="helpingbutonheader">Don't you find that you've searched?</span>
+            <span class="buttonspan">Send ticket</span>
+        </div>
+    
+    </section>
+    <section class="essays">
+        <div class="beneficial">
+            <span class="benes">Beneficial Essays</span>
+            <div class="twooptions" id="esay1">
+                <span class="internalized">MOST IMPORTANT</span>
+                <span class="internalized2">LAST ADDED</span>
+            </div>
+            <div class="threeoptions">
+                <span class="threeoptionscontent">VALORANT - Return the In-game Content</span>
+                <span class="threeoptionscontent">VALORANT - Issue Codes</span>
+                <span class="threeoptionscontent">What is Vanguard?</span>
+            </div>
+            <div class="threeoptionsex">
+                <span class="threeoptionscontent">VALORANT - Return the In-game Content</span>
+                <span class="threeoptionscontent">The Lowest And Recommended Properties for PC</span>
+                <span class="threeoptionscontent">Welcome To The VALORANT</span>
+            </div>
+        </div>
+        <div class="beneficial">
+            <span class="benes">Latest Essays</span>
+            <div class="twooptions" id="esay2">
+                <span class="internalized">MOST IMPORTANT</span>
+                <span class="internalized2">LAST ADDED</span>
+            </div>
+            <div class="threeoptions">
+                <span class="threeoptionscontent">VALORANT - Return the In-game Content</span>
+                <span class="threeoptionscontent">VALORANT - Issue Codes</span>
+                <span class="threeoptionscontent">What is Vanguard?</span>
+            </div>
+            <div class="threeoptionsex">
+                <span class="threeoptionscontent">VALORANT - Return the In-game Content</span>
+                <span class="threeoptionscontent">The Lowest And Recommended Properties for PC</span>
+                <span class="threeoptionscontent">Welcome To The VALORANT</span>
+            </div>
+        </div>
+    </section>
+    {% block footerblock %}
+    <div class="footer">
+        <span class="downloader">Download game</span>
+        <img src="/static/valorant_photos/riotengine.png">
+        <div class="sociallogos">
+            <a href="https://twitter.com/valoranttr" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/VALORANTtr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZfOWuGRCBIW75310IXrrtg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://discord.com/invite/6aTVuEB" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/valoranttr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="footerwrite">It is strongly advised that Valorant's right of privacy is respected and content is not stolen!</span>
+        <div class="policies">
+            <span>privicy policy</span>
+            <span>Terms of service</span>
+            <span>Company information</span>
+            <span>Cookie preferences</span>
+        </div>
+    </div>
+    {% endblock footerblock %}
+<script>
+ const blocks = document.querySelectorAll(".boxblock1");
+ const images = document.querySelectorAll(".boxblock1 img");
+ const essays = document.querySelectorAll(".twooptions");
+ const optionex = document.querySelectorAll(".threeoptionsex");
+ const option = document.querySelectorAll(".threeoptions");
+ const essay1 = document.getElementById("esay1");
+ const essay2 = document.getElementById("esay2");
+ const intrnlzd = document.querySelectorAll(".internalized");
+ const intrnlzd2 = document.querySelectorAll(".internalized2");
+ 
+ for(let i = 0; i<blocks.length; i++){
+    blocks[i].addEventListener("mouseover", run1)
+    function run1(){
+        images[i].style.transition = "0.5s"
+        images[i].style.transform = "rotateY(180deg)"
+    }
+    blocks[i].addEventListener("mouseout", run2)
+    function run2(){
+        images[i].style.transition = "0.5s"
+        images[i].style.transform = "rotateY(0)"
+    }
+ }
+for(let a=0; a<intrnlzd.length;a++){
+    intrnlzd[a].style.borderBottom = "1px solid red";
+    intrnlzd[a].style.color = "grey";
+}
+essay1.children[1].addEventListener("click",opennewpage);
+function opennewpage(a){
+    option[0].style.display = "none";
+    optionex[0].style.display = "flex";
+    intrnlzd[0].style.borderBottom = "none";
+    intrnlzd2[0].style.borderBottom = "1px solid red";
+    intrnlzd2[0].style.color = "grey";
+    intrnlzd[0].style.color = "white";
+    
+}
+essay1.children[0].addEventListener("click",closenewpage);
+function closenewpage(a){
+    option[0].style.display = "flex";
+    optionex[0].style.display = "none";
+    intrnlzd[0].style.borderBottom = "1px solid red";
+    intrnlzd2[0].style.borderBottom = "none";
+    intrnlzd2[0].style.color = "white";
+    intrnlzd[0].style.color = "grey";
+}
+essay2.children[1].addEventListener("click",opennewpage2);
+function opennewpage2(a){
+    option[1].style.display = "none";
+    optionex[1].style.display = "flex";
+    intrnlzd[1].style.borderBottom = "none";
+    intrnlzd2[1].style.borderBottom = "1px solid red";
+    intrnlzd2[1].style.color = "grey";
+    intrnlzd[1].style.color = "white";
+    
+    
+    
+}
+essay2.children[0].addEventListener("click",closenewpage2);
+function closenewpage2(a){
+    option[1].style.display = "flex";
+    optionex[1].style.display = "none";
+    intrnlzd[1].style.borderBottom = "1px solid red";
+    intrnlzd2[1].style.borderBottom = "none";
+    intrnlzd2[1].style.color = "white";
+    intrnlzd[1].style.color = "grey";
+}
+
+
+</script>
+</body>
+</html>
